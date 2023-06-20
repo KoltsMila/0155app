@@ -1,0 +1,21 @@
+.id {
+  font-weight: 700;
+  color: rebeccapurple;
+}
+.id span {
+  color: darkviolet;
+}
+.name {
+  font-weight: 900;
+}
+.name span {
+  font-style: italic;
+}
+.email {
+  font-weight: 700;
+  color: fuchsia;
+}
+.email span {
+  font-style: italic;
+  color: rgb(255, 0, 183);
+}
