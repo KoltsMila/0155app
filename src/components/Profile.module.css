@@ -13,9 +13,9 @@
 }
 .email {
   font-weight: 700;
-  color: fuchsia;
+  color: rgb(209, 8, 209);
 }
 .email span {
   font-style: italic;
-  color: rgb(255, 0, 183);
+  color: rgb(250, 91, 205);
 }

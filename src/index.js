@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { getUser, getUsers } from './state';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <App function={{key_getUser:getUser, key_getUsers: getUsers}}/>
   </BrowserRouter>
 );
 
