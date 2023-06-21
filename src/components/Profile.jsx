@@ -1,9 +1,10 @@
 
 import styles from "./Profile.module.css";
-
+//let colClass = "col-md-8";
 
 export const Profile = (props) => {
-  let user = props.function();
+  let userId = location.pathname.split("/")[2];
+  let user = props.function(userId);
   // console.log(user);
   return (
     <div className="row">
@@ -13,7 +14,7 @@ export const Profile = (props) => {
         width="100%"
         />
       </div>
-      <div className="col-md-8">
+      <div className={"col-md-8" + styles.column}>
         <h2 className={styles.id}>Id: <span>{user.id}</span></h2>
         <h2 className={styles.name}>Фамилия и имя: <span>{user.lastname} {user.name}</span></h2>
         <h2 className={styles.email}>E-mail: <span>{user.email}</span></h2>
